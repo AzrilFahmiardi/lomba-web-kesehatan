@@ -1,9 +1,11 @@
-/* Reset */
+/* - - - - Reset - - - - */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* - - - - Navbar - - - - */
 
 header {
   position: fixed;
@@ -72,4 +74,133 @@ nav {
 
 .user-info span:first-child {
   font-weight: bold;
+}
+
+/* - - - - Helath Facts - - - - */
+.health_facts {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 200px auto 0;
+  width: fit-content;
+  font-family: Poppins;
+}
+
+.fact_container {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.today_fact {
+  width: 800px;
+  height: 350px;
+  border-radius: 22px;
+  background-color: #000;
+  color: white;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.6);
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.today_fact h1 {
+  font-size: 25px;
+  padding: 30px 40px;
+  width: fit-content;
+}
+
+.today_fact h1::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: #ffd90f;
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+
+.today_fact p.fact_title {
+  padding: 0 40px;
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.today_fact p.fact_description {
+  padding: 0 40px;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.health_article {
+  width: 500px;
+  height: 350px;
+  border-radius: 22px;
+  background-image: url(../assets/pagi_2.jpg);
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.health_article p {
+  margin: 0 40px;
+}
+
+.health_article .publisher {
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.health_article .article_title {
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  width: 85%;
+}
+.health_article .article_title:after {
+  content: "";
+  display: block;
+  height: 5px;
+  background-color: #fff;
+  position: relative;
+  left: 0;
+  bottom: -10px;
+  border-radius: 2px;
+}
+
+.health_article button {
+  position: absolute;
+  bottom: 15px;
+  right: 35px;
+  width: 70px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #00a878;
+
+  border: 0;
+  color: #fff;
+  font-weight: 300;
+  font-family: Poppins;
+  cursor: pointer;
+}
+
+.health_article button:hover {
+  background-color: #fff;
+  color: #00a878;
+  border: 2px solid #00a878;
+  font-weight: 500;
+}
+
+.today_challenge {
+  width: 1000px;
+  height: 80px;
+  border-radius: 50px;
+  border: 5px solid white;
+  background-color: #7462bd;
+  box-shadow: 35px 15px 0 #b9ade0;
 }
