@@ -184,7 +184,7 @@ nav {
 
   border: 0;
   color: #fff;
-  font-weight: 300;
+  font-weight: 600;
   font-family: Poppins;
   cursor: pointer;
 }
@@ -192,8 +192,7 @@ nav {
 .health_article button:hover {
   background-color: #fff;
   color: #00a878;
-  border: 2px solid #00a878;
-  font-weight: 500;
+  /* border: 2px solid #00a878; */
 }
 
 .today_challenge {
@@ -203,4 +202,38 @@ nav {
   border: 5px solid white;
   background-color: #7462bd;
   box-shadow: 35px 15px 0 #b9ade0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 30px 0 60px;
+}
+
+.today_challenge .challenge_desc {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin: auto 0;
+  color: #fff;
+}
+
+.today_challenge .challenge_desc .title {
+  font-weight: 600;
+}
+
+.today_challenge button {
+  width: 140px;
+  height: 40px;
+  margin: auto 0;
+  border-radius: 20px;
+  border: 0;
+  color: #00a878;
+  font-family: Poppins;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.today_challenge button:hover {
+  background-color: #00a878;
+  color: #fff;
 }
