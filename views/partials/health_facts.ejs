@@ -2,19 +2,22 @@
   <div class="fact_container">
     <div class="today_fact">
       <h1>TODAY'S FACT !</h1>
-      <p class="fact_title">Air Membentuk Sebagian Besar Tubuh</p>
-      <p class="fact_description">Sekitar 60% tubuh manusia terdiri dari air. Air membantu menjaga suhu tubuh, melancarkan pencernaan, dan membawa nutrisi ke seluruh tubuh.</p>
+      <!-- <p class="fact_title">Air Membentuk Sebagian Besar Tubuh</p> -->
+      <p class="fact_title"><%= title %></p>
+      <!-- <p class="fact_description">Sekitar 60% tubuh manusia terdiri dari air. Air membantu menjaga suhu tubuh, melancarkan pencernaan, dan membawa nutrisi ke seluruh tubuh.</p> -->
+      <p class="fact_description"><%= description %></p>
     </div>
     <div class="health_article">
-      <p class="publisher">Healthine</p>
-      <p class="article_title">The Importance of Staying Hydrated</p>
-      <button class="article_button">READ</button>
+      <!-- <p class="publisher">Healthine</p> -->
+      <p class="publisher"><%= reference_author %></p>
+      <p class="article_title"><%= reference_title %></p>
+      <button class="article_button"><a href="<%= reference_source %>" target="_blank">READ</a></button>
     </div>
   </div>
   <div class="today_challenge">
     <div class="challenge_desc">
       <p class="title">Today Challenge :</p>
-      <p class="challenge">Minum 8 gelas air sepanjang hari ini</p>
+      <p class="challenge"><%= challenge %></p>
     </div>
     <button class="challenge_button">DONE</button>
   </div>

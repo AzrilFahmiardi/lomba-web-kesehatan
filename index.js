@@ -14,9 +14,15 @@ app.use(express.static("public"));
 app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: true }));
 
+client.connect();
+
 app.get("/", async (req, res) => {
   try {
-    res.render("index");
+    const index = Math.floor(Math.random() * 100);
+    const result = await client.query("SELECT * FROM health_facts where id=$1", [index]);
+    data = result.rows[0];
+    console.log(data);
+    res.render("index", data);
   } catch (err) {
     console.error(err);
     res.status(500).send("cannot get");
