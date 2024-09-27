@@ -4,18 +4,34 @@
       <p>YOUR ACTIVITIES</p>
     </div>
     <div class="act-list">
-      <ul>
+      <ul class="task-list">
         <li class="list-item"><input type="checkbox" id="1" class="form-check-input" /><label for="1" class="list-lable">Memasak telor di malam hari</label></li>
         <li class="list-item"><input type="checkbox" id="2" class="form-check-input" /><label for="2" class="list-lable">Jemur baju</label></li>
         <li class="list-item"><input type="checkbox" id="3" class="form-check-input" /><label for="3" class="list-lable">Laprak PTIK Belom selesai</label></li>
         <li class="list-item"><input type="checkbox" id="4" class="form-check-input" /><label for="4" class="list-lable">persaiapan ujian matek</label></li>
         <li class="list-item"><input type="checkbox" id="5" class="form-check-input" /><label for="5" class="list-lable">Memasak telor di malam hari</label></li>
+        <li class="list-item"><input type="checkbox" id="6" class="form-check-input" /><label for="6" class="list-lable">Memasak telor di malam hari</label></li>
+        <li class="list-item"><input type="checkbox" id="7" class="form-check-input" /><label for="7" class="list-lable">Memasak telor di malam hari</label></li>
+        <li class="list-item"><input type="checkbox" id="8" class="form-check-input" /><label for="8" class="list-lable">Memasak telor di malam hari</label></li>
       </ul>
     </div>
   </div>
   <div class="dashboard">
     <div class="dash-top">
-      <div class="percentage"></div>
+      <div class="percentage">
+        <button class="percentage-button previous"><img src="assets/previous.png" alt="" /></button>
+        <div class="percentage-rect">
+          <div class="circle-container">
+            <svg class="circle-progress" viewBox="0 0 150 150">
+              <circle class="circle-bg" />
+              <circle class="circle" id="progressCircle" />
+              <text x="50%" y="50%" class="progress-percentage" dominant-baseline="middle" text-anchor="middle" id="percentageText" fill="#fff">0%</text>
+            </svg>
+            <div class="date-label">23 September 2024</div>
+          </div>
+        </div>
+        <button class="percentage-button next"><img src="assets/next2.png" alt="" /></button>
+      </div>
       <div class="rand-act"></div>
     </div>
     <div class="dash-bottom"></div>

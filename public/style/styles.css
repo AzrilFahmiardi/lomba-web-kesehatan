@@ -317,6 +317,8 @@ nav {
 .act-list ul {
   list-style: none;
   padding: 0;
+  height: 400px;
+  overflow: hidden;
 }
 
 .act-list li {
@@ -388,9 +390,117 @@ nav {
 
 .percentage {
   width: 40%;
-  background-color: #7462bd;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
+.percentage .percentage-button {
+  width: 10%;
+  height: fit-content;
+
+  background-color: transparent;
+  border: none;
+}
+
+.percentage img {
+  width: 34px;
+  height: auto;
+}
+
+.percentage-button:hover {
+  opacity: 0.8;
+}
+.percentage-button:active {
+  transform: scale(0.9);
+}
+
+.percentage .percentage-rect {
+  width: 70%;
+  height: 320px;
+  background-color: #38a3a5;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.circle-progress {
+  width: 200px;
+  height: 200px;
+}
+
+.circle,
+.circle-bg {
+  fill: none;
+
+  r: 60;
+  cx: 75;
+  cy: 75;
+  transform: rotate(-90deg);
+  transform-origin: 75px 75px;
+}
+
+.circle-bg {
+  stroke-width: 15px;
+  stroke: #fff;
+}
+
+.circle {
+  stroke-width: 16px;
+  stroke: #7462bd;
+  stroke-dasharray: 377;
+  stroke-dashoffset: 10;
+  transition: stroke-dashoffset 0.6s ease;
+}
+
+.progress-percentage {
+  font-family: Poppins;
+  font-weight: 500;
+}
+
+.percentage-rect .date-label {
+  width: fit-content;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-family: Poppins;
+  font-size: 15px;
+}
+
+.task-list::-webkit-scrollbar {
+  width: 2px;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.task-list::-webkit-scrollbar-thumb {
+  background-color: #00a878;
+  border-radius: 2px;
+}
+
+.task-list:hover {
+  overflow-y: auto;
+}
+
+.task-list:hover::-webkit-scrollbar {
+  opacity: 1;
+}
+
+.task-list::-webkit-scrollbar-track {
+  background: #f8f9fa;
+}
 .rand-act {
   width: 60%;
   background-color: #00a878;
