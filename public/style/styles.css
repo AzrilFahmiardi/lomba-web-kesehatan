@@ -501,13 +501,133 @@ nav {
 .task-list::-webkit-scrollbar-track {
   background: #f8f9fa;
 }
+
+/* - - - - Random Activities Generate - - - - */
+
 .rand-act {
   width: 60%;
-  background-color: #00a878;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
 }
+
+.rand-container {
+  width: 80%;
+  height: 90%;
+  border: 8px solid #7462bd;
+  border-radius: 40px;
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 25px;
+  padding-left: 25px;
+
+  gap: 30px;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.rand-title {
+  height: fit-content;
+  width: fit-content;
+  border: 1px solid green;
+  background-color: #7462bd;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.rand-list {
+  width: 80%;
+  height: 60%;
+  width: fit-content;
+}
+
+.rand-list ul {
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+}
+
+.rand-list li {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.rand-list button {
+  width: 30px;
+  height: 30px;
+  background-color: #00a878;
+  border: 0;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.rand-list button:hover {
+  transform: scale(1.1);
+}
+
+.rand-list label {
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* - - - - Dash Bottom - - - - */
 
 .dash-bottom {
   width: 100%;
   height: 40%;
-  background-color: rgb(148, 27, 27);
+  display: flex;
+  justify-content: flex-start;
+}
+
+.dash-bottom .input {
+  position: relative;
+  top: 60px;
+  left: 100px;
+  height: 54px;
+  width: 70%;
+
+  display: flex;
+  align-items: center;
+}
+
+.act-input {
+  height: fit-content;
+  width: 100%;
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: 0;
+
+  position: absolute;
+
+  font-family: Poppins;
+}
+
+.act-input-button {
+  font-family: Poppins;
+  background-color: #00a878;
+  padding: 5px 15px;
+  border: 0;
+  border-radius: 30px;
+  color: #fff;
+
+  position: absolute;
+  right: 30px;
+  transition: all 0.1 ease;
+}
+
+.act-input-button:hover {
+  background-color: rgba(0, 168, 120, 0.8);
+}
+
+.act-input-button:active {
+  transform: scale(1.05);
 }
