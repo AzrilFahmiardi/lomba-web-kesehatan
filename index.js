@@ -1,10 +1,11 @@
 const express = require("express");
+require("dotenv").config();
 const path = require("path");
 const bodyParser = require("body-parser");
 const client = require("./db/database");
 
 const app = express();
-const port = 3306;
+const port = process.env.PORT || 3000;
 
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
