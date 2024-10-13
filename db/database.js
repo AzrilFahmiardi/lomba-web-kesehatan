@@ -1,11 +1,11 @@
-const { Client } = require("pg");
+const mysql = require("mysql");
 
-const client = new Client({
-  user: "postgres",
-  host: "localhost",
-  database: "functionality",
-  password: "12345678",
-  port: 5432,
+const client = mysql.createConnection({
+  user: "u951289607_azril",
+  host: "srv594.hstgr.io",
+  database: "u951289607_functionality",
+  password: "sAee94[Rg",
+  port: 3306,
 });
 
 module.exports = client;
