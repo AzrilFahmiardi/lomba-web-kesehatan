@@ -24,7 +24,7 @@ client.connect((err) => {
 
 app.get("/", async (req, res) => {
   try {
-    const index = Math.floor(Math.random() * 10); // Pastikan ID ini valid
+    const index = Math.floor(Math.random() * 10) + 1; // Pastikan ID ini valid
     const query = "SELECT * FROM health_facts WHERE id = ?"; // Ganti tanda tanya dengan placeholder untuk MySQL
 
     client.query(query, [index], (err, result) => {
